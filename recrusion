@@ -1,0 +1,16 @@
+#include<stdio.h>
+void demo()
+{
+    auto l;
+    static s;
+    l=++s;
+    printf("%d %d",l,s);
+    if(l<=2)
+    demo();
+    printf("%d %d",l,s);
+}
+void main(){
+    demo();
+    demo();
+}
+
