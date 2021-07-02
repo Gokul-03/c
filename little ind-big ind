@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main()
+{
+    int a=1;
+    char *ch;//the reason we are using the char type is that it takes the minimum address value ;
+    ch=&a;
+    if(*ch==1){
+    printf("LITTLE ENDIAN");
+    }
+    else
+    printf("BIG ENDIAN");
+
+    
+}
