@@ -1,0 +1,14 @@
+//the main concept this program is written because of , it is to explain we can use a single pointer(void) to display n number of data types values
+
+
+#include <stdio.h>
+void main()
+{
+   int a=10;
+   float f=11.5;
+   void *vp;
+   vp=&a;
+   printf("%d\n",*(int*)vp);
+   vp=&f;
+   printf("%f",*(float*)vp);
+}
