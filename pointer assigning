@@ -1,0 +1,14 @@
+/* we cannot assign directly a value to the pointer without giving the address of the pointer..
+if we give it in that manner the output is shown below*/
+
+#include <stdio.h>
+
+void main()
+{
+    int a;
+    int *p;
+    a=10;
+    *p=a;
+    printf("%d",*p);
+    
+}
