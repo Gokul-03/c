@@ -1,0 +1,9 @@
+/* null pointer ..points to the address of 0 .usually in evey computer the o th position is occupied by the OS.
+where the programer has no rights to reserve .if we assume the null pointer a value the output is shown below*/
+#include <stdio.h>
+void main()
+{
+    int *p=NULL;
+    *p=10;
+    printf("%d",*p);
+}
