@@ -1,0 +1,22 @@
+/******************************************************************************
+swapping by address
+note: there is a small diference in call by address and call by reference...do not colpase it
+*******************************************************************************/
+
+#include <stdio.h>
+void swap(int* a,int* b)
+{
+    int t=*a;
+    *a=*b;
+    *b=t;
+   
+}
+void main()
+{
+    int x,y;
+    x=10;
+    y=4;
+    swap(&x,&y);
+    printf("%d,%d",x,y);
+}
+
